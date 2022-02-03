@@ -66,7 +66,7 @@ func TestAskQuestion(t *testing.T) {
 	expectedOutput := `? Do you like pizza? Yes                                                        
 Answer true`
 	if output != expectedOutput {
-		t.Fatalf("Unexpected output; expected: %s ; got: \n%q", expectedOutput, output)
+		t.Fatalf("Unexpected output.\nExpected: \n%s ; \nFound: \n%s", expectedOutput, output)
 	}
 }
 
