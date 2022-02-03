@@ -42,6 +42,7 @@ func TestAskQuestion(t *testing.T) {
 		defer close(donec)
 		console.ExpectString("Do you like pizza?")
 		console.SendLine("y")
+		console.ExpectString("Answer true")
 		console.ExpectEOF()
 	}()
 
