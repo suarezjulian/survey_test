@@ -1,3 +1,4 @@
+SHELL = bash
 .PHONY: test
 test:
-	for ((i=1; i <= 20; ++i)) do go test -v; done
+	for ((i=0; i <= 100; i++)) do go clean -testcache && go test -race; done
